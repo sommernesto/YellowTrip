@@ -56,3 +56,4 @@ Additional references:
 ## Contact
 
 For questions or feedback, please reach out via GitHub issues or connect on LinkedIn.
+www.linkedin.com/in/sommer-vargas
