@@ -28,6 +28,16 @@ This project analyzes over 3 million New York City Yellow Taxi trips from Januar
 - Model accounts for base fare, per-mile charges, peak hour multipliers (surge), and surcharges.
 - Rule-based model underperformed the machine learning model, confirming the advantage of data-driven estimation.
 
+## Data Sources
+
+- NYC Taxi & Limousine Commission (TLC) Trip Record Data:  
+  https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page  
+  Dataset used: Yellow Taxi Trip Data for January 2024 (Parquet format)
+
+Additional references:
+- TLC Rate Card: https://www.nyc.gov/assets/tlc/downloads/pdf/taxi_rate_card.pdf
+- NYC Congestion Pricing Info: https://www.nyc.gov/html/tlc/html/passenger/taxicab_rate.shtml
+
 ## Next Steps
 
 - Add geospatial features (pickup and drop-off zone IDs) for improved accuracy.
