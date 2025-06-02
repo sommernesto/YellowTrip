@@ -40,11 +40,7 @@ Additional references:
 
 ## Next Steps
 
-- Add geospatial features (pickup and drop-off zone IDs) for improved accuracy.
-- Incorporate toll and airport flat fare handling.
-- Test non-linear models such as Random Forest and XGBoost.
-- Deploy the Streamlit app via Streamlit Community Cloud.
-- Upload model and app files for full functionality.
+-Plan to integrate geospatial analysis using PULocationID and DOLocationID to refine fare predictions based on pickup and dropoff zones. Exploring RandomForest for improved accuracy, pending hardware upgrades. Aiming to deploy the Streamlit app on a public server for broader access
 
 ## Tools Used
 
@@ -55,5 +51,5 @@ Additional references:
 
 ## Contact
 
-For questions or feedback, please reach out via GitHub issues or connect on LinkedIn.
+For inquiries, please reach out via GitHub issues or connect on LinkedIn.
 www.linkedin.com/in/sommer-vargas
