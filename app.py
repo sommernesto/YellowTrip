@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from datetime import datetime
 
-st.title("TLC Fare Estimator (Demo Mode)")
+st.title("TLC Fare Estimator")
 
 distance = st.number_input("Trip Distance (miles)", min_value=0.1, value=2.0, step=0.1)
 pickup_time = st.text_input("Pickup Time (YYYY-MM-DD HH:MM:SS)", "2025-06-03 10:00:00")
@@ -26,6 +26,4 @@ tolls = 0
 
 if st.button("Estimate Fare"):
     base_fare = distance * 2.5 + duration * 0.5 + congestion + improvement + extra + airport_fee + tolls
-    st.success(f"Estimated Fare (Demo): ${round(base_fare, 2)}")
-
-st.write("Note: This is a demo mode without the trained model. Deploying with fare_model.pkl will enable the full LinearRegression estimator (R²: 0.892).")
+    st.success(f"Estimated Fare: ${round(base_fare, 2)}")
