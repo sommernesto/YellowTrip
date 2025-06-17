@@ -1,6 +1,6 @@
 # NYC TLC Fare Estimator
 
-This project analyzes over 3 million New York City Yellow Taxi trips from January 2024 to build a machine learning model that accurately predicts taxi fares. It includes a full end-to-end data analysis pipeline—data cleaning, exploratory analysis, modeling, evaluation—and an interactive Streamlit app for fare estimation.
+This project analyzes over 3 million New York City Yellow Taxi trips from January 2024 to build a machine learning model that accurately predicts taxi fares. It includes a full end-to-end data analysis pipeline—data cleaning, exploratory analysis, modeling, evaluation and an interactive Streamlit app for fare estimation.
 
 ## Project Highlights
 
