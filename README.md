@@ -1,16 +1,16 @@
 # NYC TLC Fare Estimator
 
-This project analyzes over 3 million New York City Yellow Taxi trips from January 2024 to build a machine learning model that accurately predicts taxi fares. It includes a full end-to-end data analysis pipeline—data cleaning, exploratory analysis, modeling, evaluation and an interactive Streamlit app for fare estimation.
+This project analyzes over 3 million New York City Yellow Taxi trips from January 2024 to build a machine learning model that accurately predicts taxi fares. It includes a full end-to-end data analysis pipeline—data cleaning, exploratory analysis, modeling, evaluation, geospatial feature engineering, and a deployed Streamlit app for fare estimation.
 
 ## Project Highlights
 
-- Modeling: Built an ensemble model (XGBoost + LightGBM) with strong performance
+- Modeling: Built an ensemble model (XGBoost + LightGBM)
   - R²: 0.892
   - Kaggle Top 15%
 - Rule-Based Comparison: Created a hand-crafted fare estimation function (R²: 0.073) as a baseline.
 - Exploratory Data Analysis: Visualized fare distributions, trip distances, and outlier patterns.
-- Feature Engineering: Included trip distance, time of day, day of week, NYC-specific surcharges, and pickup/dropoff zone (PULocationID, DOLocationID) features.
-- App: Deployed a [live Streamlit app](https://yellowtrip-fyhkcrqpnatnqtbu4gk7du.streamlit.app) for real-time fare estimation based on user input.
+- Feature Engineering: Included trip distance, time of day, day of week, NYC-specific surcharges, and pickup/dropoff zone (PULocationID/DOLocationID) geospatial features.
+- App Prototype: Deployed Streamlit app for real-time fare estimation based on user input — [Live Demo ↗](https://yellowtrip-fyhkcrqpnatnqtbu4gk7du.streamlit.app)
 
 ## Key Files
 
@@ -20,12 +20,12 @@ This project analyzes over 3 million New York City Yellow Taxi trips from Januar
 | `linear_fare_plot_dayofweek.png`  | Predicted vs. actual fare plot                                |
 | `trip_distance_histogram.png`     | Histogram of trip distances                                  |
 | `fare_model.pkl`                  | Trained ensemble model (XGBoost + LightGBM)                  |
-| `app.py`                          | Streamlit app for interactive fare prediction (live)          |
+| `app.py`                          | Streamlit app for interactive fare prediction (deployed)     |
 
 ## Results
 
 - Most model predictions fall within ±5 USD of the actual fare.
-- Model accounts for base fare, per-mile charges, peak hour multipliers (surge), and surcharges.
+- Model accounts for base fare, per-mile charges, peak hour multipliers (surge), surcharges, and pickup/dropoff zone effects.
 - Rule-based model underperformed the machine learning model, confirming the advantage of data-driven estimation.
 
 ## Data Sources
@@ -37,10 +37,6 @@ This project analyzes over 3 million New York City Yellow Taxi trips from Januar
 Additional references:
 - TLC Rate Card: https://www.nyc.gov/assets/tlc/downloads/pdf/taxi_rate_card.pdf
 - NYC Congestion Pricing Info: https://www.nyc.gov/html/tlc/html/passenger/taxicab_rate.shtml
-
-## Next Steps
-
-- Explore additional external data sources (e.g. event calendars, weather) for further accuracy gains.
 
 ## Tools Used
 
